@@ -14,4 +14,8 @@ const store = createStore(
   // 3. 将这个saga middleware 连接至redux store
   applyMiddleware(sagaMiddleware)
 );
+
 // 4. 运行saga
+sagaMiddleware.run(loginSaga);
+
+export default store;
